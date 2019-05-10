@@ -1,0 +1,60 @@
+<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+<script defer src="public/fontawesome-free-5.0.8/svg-with-js/js/fontawesome-all.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://unpkg.com/animate.css@3.5.2/animate.css" type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/rmodal@1.0.28/dist/rmodal.css" type="text/css" />
+{{{isAdminEditorCSS user}}}
+<script type="text/javascript" src="https://unpkg.com/rmodal@1.0.26/dist/rmodal.js"></script>
+<div class="container">
+	<div class="panel panel-primary">
+		<div class="panel-body">
+			<div class="col-md-6">
+				<div class="modal-content">
+					<form class="form-horizontal" action="/User" method="post">
+						<input type="hidden" name="action" value="User">
+
+						<fieldset>
+
+
+							<div class="modal-body">
+								<div class="form-group">
+									<label for="dummyText" class="control-label col-xs-4">User name</label>
+									<div class="input-group col-xs-7">
+										<input class="form-control" id="username" placeholder="User name"
+											name="username" type="text" value="{{form.username}}">
+
+									</div>
+
+								</div>
+								<div class="form-group">
+									<label for="dummyText" class="control-label col-xs-4">Email</label>
+									<div class="input-group col-xs-7">
+										<input class="form-control" id="email" placeholder="Email" name="email"
+											type="text" value="{{form.email}}">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="dummyText" class="control-label col-xs-4">Password</label>
+									<div class="input-group col-xs-7">
+										<input class="form-control" id="password" name="password" placeholder="password"
+											type="text" value="{{form.password}}">
+
+									</div>
+								</div>
+
+							</div>
+							<div class="modal-footer">
+								<button class="btn btn-default" type="button" onclick="modal.close();">Cancel</button>
+								<button class="btn btn-primary" type="submit">Save</button>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

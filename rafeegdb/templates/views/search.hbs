@@ -1,0 +1,22 @@
+{{# extends "../../layouts/default.hbs"}}
+{{# block content }}
+<div class="container">
+  <div class="panel panel-primary">
+    <!-- Default panel contents -->
+    <div class="panel-heading">Search Results</div>
+    <div class="panel-body">
+      <p>{{data.keywords.content}} search results (Limited to 20 results)</p>
+    </div>
+
+    <!-- Table -->
+    <table class="table table-striped">
+      {{# each  data.posts}}
+
+      {{# include 'blog.hbs' }}
+      {{/each}}
+    </table>
+
+  </div>
+
+</div>
+{{/block}}

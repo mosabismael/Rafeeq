@@ -1,0 +1,93 @@
+<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+<script defer src="public/fontawesome-free-5.0.8/svg-with-js/js/fontawesome-all.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+{{{isAdminEditorCSS user}}}
+
+{{# if user}}
+<div class="container">
+
+	<div class="panel panel-primary">
+		<div class="panel-heading">Showing {{ data.newes.results.length}} Newsed </div>
+		<div class="panel-body">
+
+			<form class="form-horizontal" action="/news" method="post">
+				<input type="hidden" name="action" value="news">
+				<textarea id="content" name="content" style="width:100%" placeholder="Typing content News.."
+					value="{{form.content}}"></textarea>
+				<select name="classis" id="classis">
+					<option value="">(select one)</option>
+					{{# each data.classies}}
+					<option value="{{id}}">{{name}}</option>
+					{{/each}}
+				</select>
+				<button class="btn btn-primary" type="submit">Add News</button>
+				<div class="col-sm-4 col-md-3">
+					<div>
+						<a href="/news" class="active list-group-item">تصنيف</a>
+						{{# each data.classies }}
+						<a href="{{classisNewsUrl key}}" class="false list-group-item">{{name}}</a>
+						{{/each}}
+					</div>
+
+				</div>
+
+			</form>
+
+
+
+		</div>
+
+		<table class="table table-striped">
+			{{# each data.newes.results}}
+			<tr>
+				<td>
+					<div data-ks-editable="{{#if ../user}}{{adminEditableUrl ../../user _id}}{{/if}}" class="post">
+						<h2><a href="">{{{author.username}}}</a></h2>
+
+						<div class="post">
+							<p>{{{content}}}</p>
+							<img src="{{{cloudinaryUrl data.News.images }}}"
+								style="width:100px; height: 100px; crop:'fit';" class="img-responsive" />
+
+						</div>
+
+					</div>
+					<ul class="ticket-meta">
+
+						<li>
+							<small>Class</small><a href="{{classisNewsUrl key}}" rel="tag"> {{classies.name}}</a>
+						</li>
+						<li>
+							<small>Date</small><a href="" rel="tag"> {{date}}</a>
+						</li>
+
+						<li>
+							<small>Location</small><a href="" rel="tag"> {{location.state}}</a>
+						</li>
+						<li>
+							<small>Like</small><a href="" rel="tag">{{likesId}}</a>
+						</li>
+					</ul>
+				</td>
+			</tr>
+			{{/each}}
+		</table>
+		<div class="panel-footer"></div>
+	</div>
+	{{>pagination}}
+
+	{{else}}
+	<div class="container">
+
+		<div class="panel panel-primary">
+			<div class="panel-heading">Login to Platform</div>
+			<h1>No Login</h1>
+		</div>
+
+	</div>
+
+</div>
+
+{{/if}}

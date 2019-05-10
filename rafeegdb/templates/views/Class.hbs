@@ -1,0 +1,37 @@
+{{# if user}}
+<div class="container">
+	<div class="row">
+		<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+			<article>
+				<div class="form-group">
+					{{# each data.classItems}}
+
+					<div style="padding-left:10px; margin-right:0px; padding-top:5px; " class="col-sm-4 col-md-3">
+
+						<div style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+							<a href="{{classItemUrl key}}" name="classis" id="classis"
+								style="background-image: url('../images/test.jpg');" class="false list-group-item">
+								<h2 style="color:white;  height:50% ">{{name}}</h2>
+							</a>
+						</div>
+					</div>
+					{{/each}}
+
+				</div>
+
+			</article>
+		</div>
+
+	</div>
+	<table class="table table-striped">
+		{{# each data.classes.results}}
+		<div style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+			<a href="" style="background-image: url('../images/test.jpg');" class="false list-group-item">
+				<h2 style="color:white;  height:50% ">{{name}}</h2>
+			</a>
+		</div>
+		{{/each}}
+	</table>
+</div>
+<!-- {{else}} -->
+{{/if}}
