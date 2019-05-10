@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.omer.myapplication.FragmentClassMain"
+    android:orientation="vertical"
+    android:paddingBottom="100dp"
+    android:paddingTop="10dp"
+    android:weightSum="2">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/imgAB"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/pic"
+                    android:scaleType="centerCrop"
+                    />
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_height="100dp"
+                    android:background="@drawable/class_gradient">
+                </FrameLayout>
+                <TextView
+                    android:id="@+id/txtClassName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:padding="5dp"
+                    android:text="Tourism Classes"
+                    android:textColor="@color/cardview_light_background"
+                    android:textStyle="normal|bold"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="40dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:padding="5dp"
+                    android:text="Find The Best Turism Plasses in Your Favorite Catagory"
+                    android:textColor="@color/cardview_light_background"
+                    android:textAlignment="center"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif" />
+            </FrameLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/imgCl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/pic2"
+                    android:scaleType="centerCrop"
+                    />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_height="100dp"
+                    android:background="@drawable/class_gradient">
+                </FrameLayout>
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:padding="5dp"
+                    android:text="facilities"
+                    android:textColor="@color/cardview_light_background"
+                    android:textStyle="normal|bold"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="40dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:padding="5dp"
+                    android:text="Find Places Related To Turism Whereever You Go"
+                    android:textColor="@color/cardview_light_background"
+                    android:textAlignment="center"
+                    android:textStyle="normal"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="10dp"/>
+
+
+            </FrameLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

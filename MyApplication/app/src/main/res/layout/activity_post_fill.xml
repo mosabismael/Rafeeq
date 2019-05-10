@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostFillActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appBar"
+        android:background="@drawable/appbar_radius"
+        android:elevation="4dp"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:id="@+id/btnPost"
+            android:textSize="16sp"
+            android:background="@null"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:text="Post"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:id="@+id/btnCloseFill"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:textSize="16sp"
+            android:background="@null"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:text="NEXT"/>
+
+
+    </android.support.v7.widget.Toolbar>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/imgFillPreview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background ="#88676767"></FrameLayout>
+
+            <TextView
+                android:id="@+id/txtPicsNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="normal"
+                android:textColor="@color/colorPrimary"
+                android:textSize="32sp"/>
+        </FrameLayout>
+
+
+
+
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/etPostText"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="15sp"
+        android:hint="Post text.."
+
+        />
+
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add current location"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="270dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_marginTop="320dp">
+
+        <Spinner
+            android:id="@+id/spnClass"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:prompt="@string/strSpnClass"
+            android:spinnerMode="dropdown"
+            android:layout_margin="20dp"></Spinner>
+        <Spinner
+            android:id="@+id/spnArea"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:prompt="@string/strSpnArea"
+            android:spinnerMode="dropdown"
+            android:layout_margin="20dp"></Spinner></LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

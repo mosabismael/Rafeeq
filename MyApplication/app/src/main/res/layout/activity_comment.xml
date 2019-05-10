@@ -1,0 +1,100 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_comment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+
+    tools:context=".CommentActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@android:color/transparent"
+            android:src="@drawable/ic_close_black_24dp"
+            android:scaleType="centerCrop"
+            android:clickable="true"
+            android:onClick="exitComments"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:text="Comments"
+            android:textStyle="normal|bold"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/cardList"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorSEmiWhite"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/imgCommenterImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/dtName"
+            android:layout_alignStart="@+id/dtEmail"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/default_avatar"
+            />
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="50dp"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/colorLighterGray"
+            app:cardCornerRadius="25dp">
+
+            <EditText
+                android:id="@+id/etComment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="55dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="15sp"
+                android:hint="Your Comment.."
+                android:background="#00000000"
+                />
+
+            <ImageButton
+                android:id="@+id/btnSendComment"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="end"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/send_disabled"
+
+                />
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

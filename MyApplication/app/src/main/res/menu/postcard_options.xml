@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/crdmnuSave" android:title="Save Post"/>
+    <item android:id="@+id/crdmnuDelete" android:title="Delete"/>
+    <item android:id="@+id/crdmnuReport" android:title="Report"/>
+    <item android:id="@+id/crdmnuHide" android:title="Hide"/>
+
+</menu>

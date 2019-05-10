@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CameraPreview"
+    android:background="@android:color/black">
+
+    <ImageView
+        android:id="@+id/impPreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:weightSum="4"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:paddingBottom="20dp">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:layout_weight="3">
+
+            <AutoCompleteTextView
+
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:id="@+id/txtPostText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Status Description"
+                android:textColorHighlight="@android:color/white"
+                android:inputType="textMultiLine"/>
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.v7.widget.CardView
+
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="25dp"
+            android:clickable="true"
+            android:layout_weight="1"
+            >
+            <Button
+                android:id="@+id/btnPublish"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:text="Publish"
+                android:textStyle="bold"
+                android:clickable="true"/>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

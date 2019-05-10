@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="220dp">
+
+
+    <TextView
+        android:id="@+id/dtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:text="omertaj39@gmail.com"
+        android:textColor="?android:attr/actionMenuTextColor"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#c0c0c0"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/view2" />
+
+    <TextView
+        android:text="Omer Taj Elsir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dtName"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:layout_above="@+id/dtEmail"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:onClick="nameClick"/>
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/imgDrawer"
+        android:clickable="true"
+        android:onClick="picClick"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/default_avatar"
+        app:civ_border_width="0dp"
+        app:civ_shadow="true"
+        app:civ_shadow_radius="10"
+        app:civ_shadow_color="#AAA"
+        android:layout_above="@+id/dtName"
+        android:layout_alignStart="@+id/dtEmail" />
+
+
+</RelativeLayout>

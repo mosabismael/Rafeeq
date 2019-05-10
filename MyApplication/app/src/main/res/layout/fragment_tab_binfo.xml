@@ -1,0 +1,164 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.omer.myapplication.tabInfo"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I find Pleasere in coding
+am everywhare and no whare
+omer is the name"
+        android:layout_gravity="left"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="70dp"/>
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="70dp"
+        android:src="@drawable/phone26px"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+24991400444"
+        android:layout_gravity="left"
+        android:layout_marginTop="155dp"
+        android:layout_marginLeft="120dp"/>
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="70dp"
+        android:src="@drawable/envelope26px"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="omertaj39@gmail.com"
+        android:layout_gravity="left"
+        android:layout_marginTop="205dp"
+        android:layout_marginLeft="120dp"/>
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="70dp"
+        android:src="@drawable/marker26px"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sudan-Khartoum"
+        android:layout_gravity="left"
+        android:layout_marginTop="255dp"
+        android:layout_marginLeft="120dp"/>
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="70dp"
+        android:src="@drawable/gender26px"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Male"
+        android:layout_gravity="left"
+        android:layout_marginTop="305dp"
+        android:layout_marginLeft="120dp"/>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/carsoul"/>
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/back64px"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/slider_shadow_left"
+            android:scaleType="fitCenter"/>
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/forward64px"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/slider_shadow_right"
+            android:scaleType="fitCenter"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:layout_marginTop="30dp">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/twitter50px"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"/>
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/facebook50px"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"/>
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/instagram50px"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"/>
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/linked"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

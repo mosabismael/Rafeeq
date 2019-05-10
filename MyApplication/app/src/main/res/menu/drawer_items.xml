@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/menu_top"
+        android:checkableBehavior="all">
+
+        <item
+            android:id="@+id/drawer_home"
+            android:title="Home Page"
+            android:icon="@drawable/home24px"/>
+    <item
+        android:id="@+id/drawer_edit"
+        android:title="Edit Profile"
+        android:icon="@drawable/edit24px"/>
+
+    <item
+        android:id="@+id/drawer_saved"
+        android:title="Saved"
+        android:icon="@drawable/bookmark24px"/>
+    </group>
+
+    <group
+        android:id="@+id/menu_bottom"
+        android:checkableBehavior="all">
+
+    <item
+        android:id="@+id/drawer_setting"
+        android:icon="@drawable/settings24px"
+        android:title="Setting" />
+
+    <item
+        android:id="@+id/drawer_about"
+        android:title="About Us"
+        android:icon="@drawable/about24px"/>
+
+
+    <item
+        android:id="@+id/drawer_logot"
+        android:title="Log Out"
+        android:icon="@drawable/logout24px"/>
+    </group>
+
+
+</menu>

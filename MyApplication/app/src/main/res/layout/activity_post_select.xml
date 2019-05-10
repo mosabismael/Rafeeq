@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PostFillActivity"
+    >
+    <android.support.v7.widget.Toolbar
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appBar"
+        android:background="@drawable/appbar_radius"
+        android:elevation="4dp"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:id="@+id/btnToFill"
+            android:textSize="16sp"
+            android:background="@null"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:text="NEXT"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:id="@+id/btnCloseSelect"
+            android:src="@drawable/ic_close_black_24dp"
+            android:textSize="16sp"
+            android:background="@null"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:text="NEXT"/>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_centerVertical="true"
+        >
+        <com.jess.ui.TwoWayGridView
+            android:id="@+id/gv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:columnWidth="320dp"
+            app:rowHeight="320dp"
+            app:numColumns="auto_fit"
+            app:numRows="auto_fit"
+            app:verticalSpacing="1dp"
+            app:horizontalSpacing="1dp"
+            app:stretchMode="spacingWidthUniform"
+            app:scrollDirectionPortrait="horizontal"
+            app:scrollDirectionLandscape="vertical"
+            app:gravity="center"/>
+    </FrameLayout>
+
+
+
+
+    <ImageView
+        android:id="@+id/imgFiller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/empty_box"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="140dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:scaleType="fitCenter"
+        />
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:weightSum="5">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            app:cardCornerRadius="25dp"
+            android:clickable="true"
+            android:layout_margin="5dp"
+            app:cardElevation="5dp"
+            android:layout_weight="2">
+
+            <Button
+                android:id="@+id/btnAddImages"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:drawableLeft="@drawable/ic_image_24dp"
+                android:padding="5dp"
+                android:text="add images"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            app:cardCornerRadius="25dp"
+            android:layout_margin="5dp"
+            app:cardElevation="5dp"
+            android:clickable="true"
+            android:layout_weight="2">
+            <Button
+                android:id="@+id/btnAddVideos"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:text="add videos"
+                android:drawableLeft="@drawable/ic_video_24dp"
+                android:padding="5dp"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:clickable="true"/>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            app:cardCornerRadius="25dp"
+            android:layout_margin="5dp"
+            app:cardElevation="5dp"
+            android:clickable="true"
+            android:layout_weight="1">
+            <ImageButton
+                android:id="@+id/btnOpenCamera"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_photo_camera_24dp"
+                android:layout_margin="10dp"
+                android:scaleType="fitCenter"
+                android:textStyle="bold"
+                android:clickable="true"/>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</RelativeLayout>

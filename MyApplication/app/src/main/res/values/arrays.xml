@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <integer-array name="image_ids">
+        <item>@drawable/av1</item>
+        <item>@drawable/car</item>
+        <item>@drawable/av2</item>
+        <item>@drawable/city</item>
+
+    </integer-array>
+</resources>

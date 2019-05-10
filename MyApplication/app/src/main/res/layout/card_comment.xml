@@ -1,0 +1,55 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto"
+    cardView:cardCornerRadius="4dp"
+    android:id="@+id/crdComment"
+    cardView:cardElevation="2dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/imgCommenterImage"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_above="@+id/dtName"
+                android:layout_alignStart="@+id/dtEmail"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:src="@drawable/default_avatar"
+                 />
+
+            <TextView
+                android:id="@+id/txtCommenterName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="El-Salam Rotana"
+                android:textStyle="normal|bold"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:text="elsalam rotana is a nice hotel in khartoum that provice verius solutions"
+                android:textColor="@android:color/darker_gray"
+                android:textStyle="normal"
+                android:textSize="16sp" />
+        </FrameLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

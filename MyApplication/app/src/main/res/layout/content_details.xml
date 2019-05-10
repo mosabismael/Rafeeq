@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#000">
+
+
+
+    <com.jsibbold.zoomage.ZoomageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:zoomage_restrictBounds="false"
+        app:zoomage_animateOnReset="false"
+        app:zoomage_autoResetMode="UNDER"
+        app:zoomage_autoCenter="false"
+        app:zoomage_zoomable="true"
+        app:zoomage_translatable="false"
+        app:zoomage_minScale="0.6"
+        app:zoomage_maxScale="8"
+        zoomage_doubleTapToZoom="true"
+        zoomage_doubleTapToZoomScaleFactor="4"
+        />
+    <ImageButton
+        android:id="@+id/btnCloseDetails"
+        android:background="@android:color/transparent"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_close_white_24dp"
+        android:layout_margin="10dp"
+        />
+    
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#00000c"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:textSize="20dp" />
+</FrameLayout>
